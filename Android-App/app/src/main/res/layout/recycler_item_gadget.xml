@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:minHeight="56dp"
+    android:gravity="center_vertical"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="IPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="NEU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemState"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/placeHolder1"
+        android:layout_toRightOf="@+id/itemName"
+        android:layout_toEndOf="@+id/itemName"
+        android:layout_alignParentTop="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toRightOf="@+id/itemState"
+        android:layout_toEndOf="@+id/itemState"
+        android:id="@+id/placeHolder2" />
+
+    <TextView
+        android:text="Apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/itemManufacturer"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/placeHolder1"
+        android:layout_toEndOf="@+id/placeHolder1"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Verfügbar ab 5.11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toRightOf="@+id/placeHolder2"
+        android:layout_toEndOf="@+id/placeHolder2"
+        android:id="@+id/itemMessage" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/placeholder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/step1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aufwiedersehen!"
+        android:id="@+id/textView3"
+        android:textSize="46sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:autoText="false" />
+</RelativeLayout>
+

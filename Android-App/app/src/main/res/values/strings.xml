@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gadgeothek</string>
+    <string name="action_logout">Abmelden</string>
+    <string name="action_setServer">Server wechseln</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

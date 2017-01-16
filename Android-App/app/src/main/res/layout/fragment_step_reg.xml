@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="32dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/step1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weiter"
+        android:id="@+id/loginButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/Button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bitte geben Sie die gewünschten Informationen ein"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView7" />
+
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:id="@+id/nameLayout"
+    android:layout_gravity="center"
+    android:layout_below="@+id/textView7"
+    android:layout_height="wrap_content"
+    app:hintTextAppearance="@style/TextLabel">
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameEditText"
+        android:hint="Name"
+        android:padding="8dp"
+        android:background="#009688"
+        android:textColor="#FFFFFF" />
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/adressLayout"
+        android:layout_gravity="center"
+        android:layout_below="@+id/nameLayout"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextLabel"
+        android:layout_marginTop="15dp">
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/addressEditText"
+        android:hint="Adresse"
+        android:padding="8dp"
+            android:background="#009688"
+        android:textColor="#FFFFFF" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mnumberLayout"
+        android:layout_gravity="center"
+        android:layout_below="@+id/passwordLayout"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextLabel"
+        android:layout_marginTop="15dp">
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/mnumberEditText"
+        android:textColorHint="#FFFFFF"
+        android:padding="8dp"
+        android:hint="Matrikelnummer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+            android:background="#009688"
+        android:textColor="#FFFFFF" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/emailLayout"
+        android:layout_gravity="center"
+        android:layout_below="@+id/mnumberLayout"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextLabel"
+        android:layout_marginTop="15dp">
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailEditText"
+        android:textColorHint="#FFFFFF"
+        android:padding="8dp"
+        android:hint="E-Mail"
+        android:layout_alignParentBottom="true"
+            android:background="#009688"
+        android:textColor="#FFFFFF" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/passwordLayout"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextLabel"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/adressLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordEditText"
+        android:hint="Passwort"
+        android:padding="8dp"
+            android:background="#009688"
+        android:textColor="#FFFFFF" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>
